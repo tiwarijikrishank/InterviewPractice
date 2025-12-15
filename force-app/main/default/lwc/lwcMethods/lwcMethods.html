@@ -1,0 +1,22 @@
+<template>
+    <div class ="slds-m-around_medium">
+        <lightning-card title="Show Contacts List with wire Adaptor">
+            <div class="slds-p-around_medium">
+                <lightning-input type="text" required message-when-value-missing="contact name is required" label="Search Contact"
+                    value={inputContactName} onchange={handleChange}></lightning-input>
+                <lightning-button label="Search Contact" onclick={handleSearch} class="slds-m-bottom_small"></lightning-button>
+                
+            </div>
+            <template lwc:if={contactList}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={contactList}
+                    columns={columns}
+                    draft-values={draftValues}
+                    onsave={handleSave}
+                >
+            </lightning-datatable>
+            </template>
+        </lightning-card>
+    </div>
+</template>
