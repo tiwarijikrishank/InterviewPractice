@@ -5,5 +5,9 @@
     "**/.sf": true,
     "**/.sfdx": true
   },
-  "xml.preferences.showSchemaDocumentationType": "none"
+  "xml.preferences.showSchemaDocumentationType": "none",
+  "salesforce.einsteinForDevelopers.enableAutocompletions": false,
+  "apexPMD.jrePath": "C:\\Program Files\\Java\\jdk-21",
+  "salesforcedx-vscode-apex.java.home": "C:\\Program Files\\Java\\jdk-21",
+  "debug.javascript.debugByLinkOptions": "always"
 }
